@@ -1,0 +1,32 @@
+PRINTLY SUPRIMENTOS v0.2.1 — GUIA RÁPIDO
+
+1) TESTE O VISUAL
+   Execute ABRIR_LOCAL.bat
+   Site:  http://localhost:8080/
+   Admin: http://localhost:8080/admin/
+
+2) CRIE O SUPABASE
+   - Crie um projeto em supabase.com
+   - SQL Editor: execute sql/01_SETUP_COMPLETO.sql
+   - Authentication > Users: crie seu único usuário administrador
+   - SQL Editor: edite o e-mail e execute sql/02_DEFINIR_ADMIN.sql
+
+3) CONECTE
+   - Abra assets/js/config.js
+   - Cole SUPABASE_URL
+   - Cole SUPABASE_PUBLISHABLE_KEY
+   - NÃO use Secret key/service_role
+
+4) TESTE O LOGIN
+   - Abra /admin/
+   - Entre com o usuário criado
+   - Cadastre um produto e verifique no catálogo
+
+5) GITHUB
+   - Novo repositório: printly-suprimentos
+   - Upload de TODO o conteúdo desta pasta
+   - index.html deve ficar na raiz
+   - Settings > Pages > Deploy from a branch
+   - main + /(root) > Save
+
+Leia README.md para o passo a passo completo.

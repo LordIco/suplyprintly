@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#071425" />
+  <meta name="description" content="Suprimentos selecionados para impressão 3D, com links de parceiros e afiliados do Printly." />
+  <title>Printly Suprimentos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="./" aria-label="Printly Suprimentos"><img src="assets/img/printly-logo.png" alt="Printly" /></a>
+      <nav class="topnav" aria-label="Menu principal"><a href="#categorias">Categorias</a><a href="#ofertas">Ofertas</a><a href="#como-funciona">Como funciona</a></nav>
+      <span id="dataSourceBadge" class="source-badge">Carregando catálogo…</span>
+    </div>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="pulse-dot"></span> Seleção Printly</span>
+        <h1>Os suprimentos certos para <span>imprimir melhor</span> e gastar com mais inteligência.</h1>
+        <p>Filamentos, resinas, peças, ferramentas e itens de acabamento selecionados para quem vive de impressão 3D — ou está começando agora.</p>
+        <div class="hero-search" role="search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg><input id="heroSearch" type="search" placeholder="Buscar PLA, resina, bico, ferramenta..." autocomplete="off" /><button id="heroSearchBtn">Buscar</button></div>
+        <div class="trust-row"><span>✓ Curadoria Printly</span><span>✓ Links diretos</span><span>✓ Comparação rápida</span></div>
+      </div>
+      <div class="hero-panel"><div class="mini-card accent-card"><span class="mini-kicker">Para sua próxima impressão</span><strong>Encontre o material sem sair do fluxo.</strong><small>O Printly pode abrir esta página já filtrada pelo material do seu projeto.</small></div><div class="metric-grid"><div><strong id="metricProducts">0</strong><span>produtos</span></div><div><strong id="metricCategories">0</strong><span>categorias</span></div><div><strong id="metricStores">0</strong><span>parceiros</span></div></div><div class="flow-card"><span>Printly</span><i>→</i><span>Suprimentos</span><i>→</i><span>Parceiro</span></div></div>
+    </section>
+    <section id="categorias" class="wrap section-block"><div class="section-head"><div><span class="section-kicker">Navegue por necessidade</span><h2>Categorias</h2></div><button class="text-btn" id="clearFilters">Limpar filtros</button></div><div id="categoryGrid" class="category-grid"></div></section>
+    <section id="ofertas" class="wrap section-block"><div class="catalog-toolbar"><div class="section-head compact"><div><span class="section-kicker">Catálogo selecionado</span><h2>Comprar suprimentos</h2></div></div><div class="toolbar-controls"><label class="search-small"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg><input id="catalogSearch" type="search" placeholder="Buscar no catálogo" /></label><select id="storeFilter"><option value="">Todas as lojas</option></select><select id="sortSelect"><option value="featured">Destaques</option><option value="price-asc">Menor preço</option><option value="price-desc">Maior preço</option><option value="discount">Maior desconto</option><option value="name">Nome A–Z</option></select></div></div><div class="result-line"><span id="resultCount">0 produtos</span><div id="activeFilter" class="active-filter"></div></div><div id="productGrid" class="product-grid"></div><div id="emptyState" class="empty-state" hidden><div>⌕</div><h3>Nenhum produto encontrado</h3><p>Tente outro termo ou remova os filtros atuais.</p><button id="emptyClear" class="primary-btn">Ver todo o catálogo</button></div></section>
+    <section id="como-funciona" class="wrap section-block how"><div class="section-head"><div><span class="section-kicker">Simples e transparente</span><h2>Como funciona</h2></div></div><div class="how-grid"><article><span>01</span><h3>Você encontra</h3><p>Pesquise suprimentos por categoria, material, marca ou necessidade.</p></article><article><span>02</span><h3>O Printly indica</h3><p>Mostramos ofertas e itens de lojas parceiras de forma organizada.</p></article><article><span>03</span><h3>Você compra no parceiro</h3><p>O botão abre a página da loja. Preço, estoque, frete e pagamento são tratados pelo parceiro.</p></article></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><img src="assets/img/printly-logo.png" alt="Printly"/><div><p>Printly Suprimentos</p><small>Alguns links podem gerar comissão de afiliado para o Printly, sem alterar o preço para você. Preços e disponibilidade podem mudar na loja parceira.</small></div></div></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.111.0"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/supabase-client.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
