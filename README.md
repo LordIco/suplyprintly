@@ -1,4 +1,4 @@
-# Printly Suprimentos v0.2.1
+# Printly Suprimentos v0.2.0
 
 Catálogo público de links de afiliados + painel administrativo protegido por Supabase Auth e Row Level Security (RLS).
 
@@ -80,7 +80,7 @@ A alteração fica disponível no catálogo público imediatamente após uma nov
 ### Enviar estes arquivos
 
 1. Dentro do repositório, clique em **Add file > Upload files**.
-2. Arraste TODO o conteúdo que está dentro da pasta `Printly_Suprimentos_v0.2.1`.
+2. Arraste TODO o conteúdo que está dentro da pasta `Printly_Suprimentos_v0.2.0`.
 3. Garanta que `index.html` fique na raiz do repositório, e não dentro de uma pasta extra.
 4. Clique em **Commit changes**.
 
