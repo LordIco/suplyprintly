@@ -16,7 +16,7 @@
   <header class="topbar">
     <div class="wrap topbar-inner">
       <a class="brand" href="./" aria-label="Printly Suprimentos"><img src="assets/img/printly-logo.png" alt="Printly" /></a>
-      <nav class="topnav" aria-label="Menu principal"><a href="#categorias">Categorias</a><a href="#ofertas">Ofertas</a><a href="#como-funciona">Como funciona</a></nav>
+      <nav class="topnav" aria-label="Menu principal"><a href="#categorias">Categorias</a><a href="#ofertas">Ofertas</a><a href="#como-funciona">Como funciona</a><a href="https://lordico.github.io/printly/#planos" target="_blank" rel="noopener">Printly Completo</a></nav>
       <span id="dataSourceBadge" class="source-badge">Carregando catálogo…</span>
     </div>
   </header>
@@ -31,6 +31,14 @@
       </div>
       <div class="hero-panel"><div class="mini-card accent-card"><span class="mini-kicker">Para sua próxima impressão</span><strong>Encontre o material sem sair do fluxo.</strong><small>O Printly pode abrir esta página já filtrada pelo material do seu projeto.</small></div><div class="metric-grid"><div><strong id="metricProducts">0</strong><span>produtos</span></div><div><strong id="metricCategories">0</strong><span>categorias</span></div><div><strong id="metricStores">0</strong><span>parceiros</span></div></div><div class="flow-card"><span>Printly</span><i>→</i><span>Suprimentos</span><i>→</i><span>Parceiro</span></div></div>
     </section>
+
+    <section class="wrap section-block" aria-label="Printly Completo">
+      <div class="hero-panel" style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:28px 30px">
+        <div style="max-width:760px"><span class="section-kicker">SOFTWARE PRINTLY</span><h2 style="font-size:clamp(25px,3vw,38px);letter-spacing:-.035em;margin:7px 0 10px">Além dos suprimentos, organize o negócio inteiro.</h2><p style="color:#8fa5c0;line-height:1.65;margin:0">Precificação, clientes, materiais, impressoras, orçamentos, produção, estoque e BI em um único aplicativo para impressão 3D.</p></div>
+        <a class="primary-btn" href="https://lordico.github.io/printly/#planos" target="_blank" rel="noopener" style="display:inline-block;white-space:nowrap">Conhecer o Printly Completo</a>
+      </div>
+    </section>
+
     <section id="categorias" class="wrap section-block"><div class="section-head"><div><span class="section-kicker">Navegue por necessidade</span><h2>Categorias</h2></div><button class="text-btn" id="clearFilters">Limpar filtros</button></div><div id="categoryGrid" class="category-grid"></div></section>
     <section id="ofertas" class="wrap section-block"><div class="catalog-toolbar"><div class="section-head compact"><div><span class="section-kicker">Catálogo selecionado</span><h2>Comprar suprimentos</h2></div></div><div class="toolbar-controls"><label class="search-small"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg><input id="catalogSearch" type="search" placeholder="Buscar no catálogo" /></label><select id="storeFilter"><option value="">Todas as lojas</option></select><select id="sortSelect"><option value="featured">Destaques</option><option value="price-asc">Menor preço</option><option value="price-desc">Maior preço</option><option value="discount">Maior desconto</option><option value="name">Nome A–Z</option></select></div></div><div class="result-line"><span id="resultCount">0 produtos</span><div id="activeFilter" class="active-filter"></div></div><div id="productGrid" class="product-grid"></div><div id="emptyState" class="empty-state" hidden><div>⌕</div><h3>Nenhum produto encontrado</h3><p>Tente outro termo ou remova os filtros atuais.</p><button id="emptyClear" class="primary-btn">Ver todo o catálogo</button></div></section>
     <section id="como-funciona" class="wrap section-block how"><div class="section-head"><div><span class="section-kicker">Simples e transparente</span><h2>Como funciona</h2></div></div><div class="how-grid"><article><span>01</span><h3>Você encontra</h3><p>Pesquise suprimentos por categoria, material, marca ou necessidade.</p></article><article><span>02</span><h3>O Printly indica</h3><p>Mostramos ofertas e itens de lojas parceiras de forma organizada.</p></article><article><span>03</span><h3>Você compra no parceiro</h3><p>O botão abre a página da loja. Preço, estoque, frete e pagamento são tratados pelo parceiro.</p></article></div></section>
