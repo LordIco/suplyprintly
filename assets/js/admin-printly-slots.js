@@ -6,7 +6,7 @@ window.addEventListener('load',()=>{
   show.innerHTML='<input id="showInPrintly" type="checkbox"> Mostrar no Printly';
   const slotWrap=document.createElement('label');
   slotWrap.style.display='inline-flex';slotWrap.style.alignItems='center';slotWrap.style.gap='7px';
-  slotWrap.innerHTML='Posição no app <select id="printlySlot"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>';
+  slotWrap.innerHTML='Posição no app <select id="printlySlot"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option></select>';
   row.appendChild(show);row.appendChild(slotWrap);
 
   const slot=document.querySelector('#printlySlot');
@@ -45,15 +45,15 @@ window.addEventListener('load',()=>{
   form?.addEventListener('submit',e=>{
     if(document.querySelector('#showInPrintly')?.checked&&!document.querySelector('#printlySlot')?.value){
       e.preventDefault();e.stopImmediatePropagation();
-      if(typeof window.toast==='function')window.toast('Escolha a posição 1, 2 ou 3 para mostrar no Printly.','error');
-      else alert('Escolha a posição 1, 2 ou 3 para mostrar no Printly.');
+      if(typeof window.toast==='function')window.toast('Escolha a posição de 1 a 6 para mostrar no Printly.','error');
+      else alert('Escolha a posição de 1 a 6 para mostrar no Printly.');
     }
   },true);
 
   const note=document.createElement('div');
   note.className='admin-note';
   note.style.marginTop='8px';
-  note.textContent='O app mostra no máximo 3 ofertas. Se você usar uma posição já ocupada, o produto anterior sai automaticamente desse slot.';
+  note.textContent='O app mostra no máximo 6 ofertas. Se você usar uma posição já ocupada, o produto anterior sai automaticamente desse slot.';
   row.parentElement?.insertBefore(note,row.nextSibling);
   sync();
 });
